@@ -1,17 +1,17 @@
 import './App.css';
 
-//Lessons
-import Lessons_06 from './lessons/Lessons_06/Lessons_06';
+// Lessons
+import Lesson06 from './lessons/Lessons_06/Lessons_06';
 
-//Homeworks
-//Consultations
+// Homeworks
+
+// Consultations
+
 
 function App() {
   return (
     <div className="App">
-<Lessons_06 />
-{/* <Homework_06/> */}
-
+      <Lesson06 />
     </div>
   );
 }
