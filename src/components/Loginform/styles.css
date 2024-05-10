@@ -1,7 +1,7 @@
 .loginform-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;  /*Zadaem otstupi megdu Inputsami-conteinerami*/
+  gap: 30px;
   width: 590px;
   height: fit-content;
   padding: 60px;
@@ -17,6 +17,7 @@
 .inputs-container {
   display: flex;
   flex-direction: column;
-  gap: 20px; /*Zadaem otstupi megdu Inputsami-conteinerami*/
+  gap: 20px;
   width: 100%;
 }
+
