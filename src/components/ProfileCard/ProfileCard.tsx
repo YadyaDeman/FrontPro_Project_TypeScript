@@ -1,6 +1,5 @@
-import "./styles.css";
+import { ProfileCardWrapper, PropertyName } from "./styles";
 import { User } from "./types";
-
 
 function ProfileCard() {
   const userData: User = {
@@ -12,12 +11,12 @@ function ProfileCard() {
   };
 
   return (
-    <div className="profile-card-wrapper">
+    <ProfileCardWrapper>
       <img src={userData.avatar} />
       <h1>{userData.userName}</h1>
-      <p className="property-name">Profession: {userData.profession}</p>
-      <p className="property-name">Hobby: {userData.hobbies}</p>
-    </div>
+      <PropertyName>Profession: {userData.profession}</PropertyName>
+      <PropertyName>Hobby: {userData.hobbies}</PropertyName>
+    </ProfileCardWrapper>
   );
 }
 

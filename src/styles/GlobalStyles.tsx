@@ -1,7 +1,8 @@
-/*
+import { Global, css } from '@emotion/react';
 
-* {
-    box-sizing: border-box;
+const globalStyles = css`
+  * {
+  box-sizing: border-box;
   }
 
   body,
@@ -26,6 +27,9 @@
     display: flex;
     min-height: 100%;
   }
+`
+function GlobalStyles() {
+  return <Global styles={globalStyles} />
+}
 
-
-  */
+export default GlobalStyles;

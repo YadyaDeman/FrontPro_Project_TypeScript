@@ -1,4 +1,13 @@
-textarea {
+import styled from "@emotion/styled";
+
+
+export const TextAreaContainer = styled.div `
+display: flex;
+    flex-direction: column;
+    gap: 5px;
+`
+
+/*textarea {
     width: 150px;
     height: 40px;
     background: aquamarine;
@@ -13,3 +22,4 @@ textarea {
     flex-direction: column;
     gap: 5px;
   }
+  */
