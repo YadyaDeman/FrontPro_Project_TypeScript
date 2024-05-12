@@ -35,8 +35,8 @@ const onShowResult =()=>{
 
     return(
         <Homework09Wrapper>
-<Input placeholder="First name" onInputChange={onFirstNoteInputChange} name="firtsNote" label={"First"} />
-<Input placeholder="Second name" onInputChange={onSecondNoteInputChange } name="secondNote" label={"Second"} />
+<Input value ={firstNote} placeholder="First name" onInputChange={onFirstNoteInputChange} name="firtsNote" label={"First"} />
+<Input value ={secondtNote} placeholder="Second name" onInputChange={onSecondNoteInputChange } name="secondNote" label={"Second"} />
 <Button name={"Click me!"} onButtonClick={onShowResult} />
 <ResultsBlock isShowResult={isShowResult}>
     <ResultWrapper>{firstNote}</ResultWrapper>

@@ -11,7 +11,9 @@ function Input({
   placeholder,
   label,
   onInputChange,
+  value
 }: InputProps) {
+
   return (
     <InputComponentContainer>
       <InputComponentLabel>{label}</InputComponentLabel>
@@ -20,6 +22,7 @@ function Input({
         type={type}
         placeholder={placeholder}
         onChange={onInputChange}
+        value={value}
       />
     </InputComponentContainer>
   );
