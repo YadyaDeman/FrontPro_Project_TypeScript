@@ -30,6 +30,7 @@ const onSecondNoteInputChange = (event: ChangeEvent<HTMLInputElement>): void =>{
 
 const onShowResult =()=>{
     setisShowResult(true)
+    //setisShowResult(!setisShowResult) pri klike pokazivaet ili ne pokazivaet rezultat
 }
 
     return(
