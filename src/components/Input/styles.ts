@@ -25,7 +25,13 @@ export const InputComponent = styled.input`
   &::placeholder {
     color: #6f6f6f;
   }
-`;
+`
+
+export const ErrorMesage = styled.p`
+color: red;
+font-size: 16px;
+height: 18px;
+`
 
 /*.input-component-container {
     display: flex;

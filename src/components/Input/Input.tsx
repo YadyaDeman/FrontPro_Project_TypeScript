@@ -1,7 +1,9 @@
+import { ErrorMessage } from "formik";
 import {
   InputComponent,
   InputComponentContainer,
   InputComponentLabel,
+  ErrorMesage,
 } from "./styles";
 import { InputProps } from "./types";
 
@@ -11,7 +13,8 @@ function Input({
   placeholder,
   label,
   onInputChange,
-  value
+  value,
+  error
 }: InputProps) {
 
   return (
@@ -24,6 +27,7 @@ function Input({
         onChange={onInputChange}
         value={value}
       />
+      <ErrorMesage>{error}</ErrorMesage>
     </InputComponentContainer>
   );
 }

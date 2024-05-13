@@ -12,5 +12,5 @@ import {
     )
   }
   
-  export default Lesson12
+  export default Lesson12;
   
