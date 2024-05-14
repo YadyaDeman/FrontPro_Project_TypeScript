@@ -27,13 +27,11 @@ const schema = Yup.object().shape({
     //чтобы сразу кидал ошибку при посещении сайта LOGINFORMA -> validateOnMount: true,
     //чтобы не реагировал submit validaziya- при написании, а только по кнопке Login -> validateOnChange: false,
     validateOnChange: false,
+//Blur фокусируется на поле
+    validateOnBlur: true,
     onSubmit: (values: LoginFormValues) => {
-      console.log(values);
-    },
+      console.log(values);    },
   });
-
-
-
   console.log(formik);
 
   return (
@@ -49,6 +47,7 @@ const schema = Yup.object().shape({
           onInputChange={formik.handleChange}
           value={formik.values[LOGIN_FIELD_NAMES.EMAIL]}
           error={formik.errors[LOGIN_FIELD_NAMES.EMAIL]}
+          onBlur={formik.handleBlur}
         />
         <Input
           name="password"
@@ -58,6 +57,8 @@ const schema = Yup.object().shape({
           onInputChange={formik.handleChange}
           value={formik.values[LOGIN_FIELD_NAMES.PASSWORD]}
           error={formik.errors[LOGIN_FIELD_NAMES.PASSWORD]}
+          onBlur={formik.handleBlur}
+
         />
       </InputsContainer>
       <Button type="submit" name="Login" />

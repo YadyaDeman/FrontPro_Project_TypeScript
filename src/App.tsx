@@ -1,6 +1,6 @@
-// import "./App.css";
 import GlobalStyles from "styles/GlobalStyles";
 import Layout from "components/Layout/Layout";
+// import "./App.css";
 
 
 
@@ -11,7 +11,7 @@ import Layout from "components/Layout/Layout";
 // import Lesson09 from "lessons/Lesson09/Lesson09";
 // import Lesson10 from "lessons/Lesson10/Lesson10";
 // import Lesson11 from "lessons/Lesson11/Lesson11";
-import Lesson12 from "lessons/Lesson12/Lesson12";
+// import Lesson12 from "lessons/Lesson12/Lesson12";
 
 
 
@@ -26,6 +26,7 @@ import Lesson12 from "lessons/Lesson12/Lesson12";
 
 // Consultations
 // import Consultation04 from "consultations/Consultation04/Consultation04";
+import Consultation05 from "consultations/Consultation05/Consultation05";
 
 
 
@@ -47,7 +48,8 @@ function App() {
       {/* <Lesson10 /> */}
       {/* <Lesson11 /> */}
       {/* <Homework11 /> */}
-      <Lesson12 />
+      {/* <Lesson12 /> */}
+      <Consultation05/>
 
 
     </>

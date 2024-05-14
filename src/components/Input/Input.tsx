@@ -6,6 +6,7 @@ import {
   ErrorMesage,
 } from "./styles";
 import { InputProps } from "./types";
+import { boolean } from "yup";
 
 function Input({
   name,
@@ -14,7 +15,8 @@ function Input({
   label,
   onInputChange,
   value,
-  error
+  error,
+  onBlur
 }: InputProps) {
 
   return (
@@ -26,6 +28,7 @@ function Input({
         placeholder={placeholder}
         onChange={onInputChange}
         value={value}
+        onBlur={onBlur}
       />
       <ErrorMesage>{error}</ErrorMesage>
     </InputComponentContainer>
