@@ -1,5 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+
 import GlobalStyles from "styles/GlobalStyles";
 import Layout from "components/Layout/Layout";
+
+
+import Home from "components/pages/Home/Home";
+import About from "components/pages/About/About";
+import Users from "components/pages/Users/Users";
 // import "./App.css";
 
 
@@ -12,6 +20,7 @@ import Layout from "components/Layout/Layout";
 // import Lesson10 from "lessons/Lesson10/Lesson10";
 // import Lesson11 from "lessons/Lesson11/Lesson11";
 // import Lesson12 from "lessons/Lesson12/Lesson12";
+// import Lesson13 from "lessons/Lesson13/Lesson13";
 
 
 
@@ -26,17 +35,25 @@ import Layout from "components/Layout/Layout";
 
 // Consultations
 // import Consultation04 from "consultations/Consultation04/Consultation04";
-import Consultation05 from "consultations/Consultation05/Consultation05";
+// import Consultation05 from "consultations/Consultation05/Consultation05";
 
 
 
 function App() {
   return (
+
     // <div className="App"> <--obertka
     // vmesto obertki sozdaem pustoy fragment: <></>
-    <>
+    <BrowserRouter>
       <GlobalStyles />
-      <Layout />
+      <Layout>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/users' element={<Users />} />
+          <Route path='*' element='Page Not Found'/>
+        </Routes>
+      </Layout>
       {/* <Lesson06 /> */}
       {/* <Lesson07 /> */}
       {/* <Homework07 /> */}
@@ -49,10 +66,12 @@ function App() {
       {/* <Lesson11 /> */}
       {/* <Homework11 /> */}
       {/* <Lesson12 /> */}
-      <Consultation05/>
+      {/* <Consultation05/> */}
+      {/* <Lesson13 /> */}
 
 
-    </>
+
+    </BrowserRouter>
     // </div>
   );
 }
